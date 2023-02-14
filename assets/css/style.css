@@ -1,79 +1,93 @@
 @charset "UTF-8";
 
-
-
 /* @FONT FACE (enable the use of 'custom fonts' inside your document) */
 
 @font-face {
-    font-family: 'Your Font Name';
-    src: url('../fonts/yourfontname/yourfontname-roman.woff2'),
-         url('../fonts/yourfontname/yourfontname-roman.woff'),
-         url('../fonts/yourfontname/yourfontname-roman.eot'),
-         url('../fonts/yourfontname/yourfontname-roman.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/yourfontname/yourfontname-roman.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-}
-
-@font-face {
-    font-family: 'Your Font Name';
-    src: url('../fonts/yourfontname/yourfontname-italic.woff2'),
-         url('../fonts/yourfontname/yourfontname-italic.woff'),
-         url('../fonts/yourfontname/yourfontname-italic.eot'),
-         url('../fonts/yourfontname/yourfontname-italic.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/yourfontname/yourfontname-italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-    font-display: block;
-}
-
-@font-face {
-  font-family: 'Your Font Name';
-  src: url('../fonts/yourfontname/galley.otf'),
-       url('../fonts/yourfontname/galley.otf'),
-       url('../fonts/yourfontname/galley.otf'),
-       url('../fonts/yourfontname/galley.otf') format('embedded-opentype'),
-       url('../fonts/yourfontname/galley.otf') format('truetype');
+  font-family: "univers";
+  src: url("../fonts/univers/univers.otf"),
+    url("../fonts/univers/univers.otf"),
+    url("../fonts/univers/univers.otf"),
+    url("../fonts/univers/univers.otf") format("embedded-opentype"),
+    url("../fonts/univers/univers.otf") format("truetype");
   font-weight: normal;
   font-display: block;
 }
 
+@font-face {
+  font-family: "lora";
+  src: url("../fonts/lora/static/Lora-Italic.ttf") format("truetype");
+/*   
+  ("../fonts/lora/static/Lora-Bold.ttf"),
+  url("../fonts/lora/static/Lora-BoldItalic.ttf"),
+  url("../fonts/lora/static/Lora-Italic.ttf"),
+  url("../fonts/lora/static/Lora-Medium.ttf"),
+  url("../fonts/lora/static/Lora-MediumItalic.ttf"),
+  url("../fonts/lora/static/Lora-Regular.ttf"),
+    url("../fonts/lora/static/Lora-SemiBold.ttf") format("embedded-opentype"),
+    url("../fonts/lora/static/Lora-SemiBoldItalic.ttf") format("truetype"); */
+  font-weight: normal;
+  font-display: block;
+}
 
+/* @font-face {
+  font-family: "cheltenham";
+  src: url("../fonts/cheltenham/cheltenham-normal.otf"),
+    url("../fonts/cheltenham/cheltenham-normal.otf"),
+    url("../fonts/cheltenham/cheltenham-normal.otf"),
+    url("../fonts/cheltenham/cheltenham-normal.otf") format("embedded-opentype"),
+    url("../fonts/cheltenham/cheltenham-normal.otf") format("truetype");
+  font-weight: normal;
+  font-display: block;
+} */
+
+@font-face {
+  font-family: "cheltenham";
+  src: url("../fonts/cheltenham/Cheltenham-Normal.woff2") format("woff2"),
+       url("../fonts/cheltenham/Cheltenham-Normal.woff") format("woff"),
+       url("../fonts/cheltenham/cheltenham-normal.otf") format("opentype");
+  font-weight: normal;
+  font-display: block;
+}
 
 /* VARIABLES */
 
 :root {
   /* Color settings */
-  --color-background: rgb(0, 12, 51);
+  --color-background: rgb(27, 53, 135);
   --color-text: rgb(255, 255, 255);
-  --color-text-link: rgba(255, 0, 0, 0.8);
+  --color-text-link: rgba(255, 255, 255);
   --color-text-link-hover: rgb(255, 255, 255);
   /* Font settings */
-  --font-family: 'Your Font Name', 'Helvetica', 'Arial', sans-serif;
-  --font-size: 24px;
+  --font-family: "univers", "cheltenham", "lora";
+  font-size: 24px;
+  font-size: clamp( 20px, 4vw, 32px );
+  --font-size: 1rem;
   /* Margins settings */
   --margin: 4rem;
 }
 
-
-
 /* GENERAL STYLES */
+
+html,
+body {
+  width: 100%;
+}
 
 html {
   font: var(--font-size) var(--font-family);
   color: var(--color-text);
   background-color: var(--color-background);
+  scroll-behavior: smooth;
 }
 
 body {
-  position:relative;
+  position: relative;
   background-color: var(--color-background);
   font: var(--font-size) var(--font-family);
   color: var(--color-text);
-  width:100%;
-  height:auto;
-  overflow-y:auto;
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
 }
 
 a {
@@ -86,7 +100,7 @@ a {
   background-position-y: 0%;
   background-size: auto auto;
   background-repeat: repeat-x;
-  background-size: 15px 5px; 
+  background-size: 15px 5px;
   background-position: 2px 19px;
   animation: move 15s linear infinite;
   -webkit-animation: move 15s linear infinite;
@@ -100,6 +114,7 @@ a:hover {
   color: var(--color-text-link-hover);
   /* text-decoration: underline; */
   animation-play-state: running;
+  background-color: rgb(255, 89, 0);
 }
 
 a:focus-visible {
@@ -107,72 +122,51 @@ a:focus-visible {
   text-decoration: none;
 }
 
-h1{
-text-align: center;
-font-size: 6em;
+h1 {
+  text-align: center;
+  margin-bottom: 0;
+  font-family: 'univers';
+  border: 2px solid white;
+  background-color: rgb(255, 89, 0);
+  font-size: 10rem;
+  font-size: clamp( 10px, 10vw, 100px );
+  /* font-size: min( 10vw, 100px ); */
 }
 
-h2{
-text-align: center;
-font-size: 3em;
+h2 {
+  text-align: center;
+  font-size: 3em;
+  font-size: clamp( 10px, 6vw, 60px );
+  font-family: 'univers';
+  border: 2px solid white;
+  background-color: rgb(255, 89, 0);
 }
 
-h3{
+h3 {
+  font-size: 2em;
+  text-align: center;
+  font-family: 'univers';
+  border: 2px solid white;
+  background-color: rgb(255, 89, 0);
+}
+
+h4,
+h5,
+h6 {
   text-align: center;
 }
 
-h4, h5, h6{
+p {
+  font-family: "lora", monospace;
+}
+
+ol,
+ul {
+  font-size: 1.25em;
   text-align: center;
+  border: 2px solid white;
+  background-color: rgb(255, 89, 0);
 }
-
-p{
-font-family: 'helvetica';
-text-align: center;
-}
-
-ol, ul{
-font-size: 1.25em;
-}
-
-blockquote{
-  /* blockquote element style */
-}
-
-hr{
-  /* horizontal rule style */
-}
-
-
-
-/* PAGE STYLES */
-
-/* page structure */
-
-div.page-wrapper {
-  /* the element that 'wraps' everything */
-  padding: var(--margin);
-}
-
-/* navigation */
- 
-nav{
-  
-}
-
-/* content */
-
-main{
- 
-}
-
-summary{
-  
-}
-
-
-
-
-
 
 /* GENERAL USABILITY */
 
@@ -202,110 +196,209 @@ summary{
   white-space: nowrap !important;
 }
 
-
-
-
-
-
 /* MEDIA QUERIES */
 
 /* responsive typeface */
 
-@media (max-width: 298px) { 
-  :root{ --font-size: 15px; } html, body {font: var(--font-size) var(--font-family);} 
+@media (max-width: 298px) {
+  :root {
+    --font-size: 15px;
+  }
+  html,
+  body {
+    font: var(--font-size) var(--font-family);
+  }
 }
-@media (min-width: 299px) and (max-width: 339px) { 
-  :root{ --font-size: 16px; } html, body {font: var(--font-size) var(--font-family);} 
+@media (min-width: 299px) and (max-width: 339px) {
+  :root {
+    --font-size: 16px;
+  }
+  html,
+  body {
+    font: var(--font-size) var(--font-family);
+  }
 }
-@media (min-width: 340px) and (max-width: 439px) { 
-  :root{ --font-size: 17px; } html, body {font: var(--font-size) var(--font-family);} 
+@media (min-width: 340px) and (max-width: 439px) {
+  :root {
+    --font-size: 17px;
+  }
+  html,
+  body {
+    font: var(--font-size) var(--font-family);
+  }
 }
-@media (min-width: 440px) and (max-width: 599px) { 
-  :root{ --font-size: 18px; } html, body {font: var(--font-size) var(--font-family);}
+@media (min-width: 440px) and (max-width: 599px) {
+  :root {
+    --font-size: 18px;
+  }
+  html,
+  body {
+    font: var(--font-size) var(--font-family);
+  }
 }
-@media (min-width: 600px) and (max-width: 779px) { 
-  :root{ --font-size: 19px; } html, body {font: var(--font-size) var(--font-family);}
+@media (min-width: 600px) and (max-width: 779px) {
+  :root {
+    --font-size: 19px;
+  }
+  html,
+  body {
+    font: var(--font-size) var(--font-family);
+  }
 }
-@media (min-width: 780px) and (max-width: 992px) { 
-  :root{ --font-size: 20px; } html, body {font: var(--font-size) var(--font-family);}
+@media (min-width: 780px) and (max-width: 992px) {
+  :root {
+    --font-size: 20px;
+  }
+  html,
+  body {
+    font: var(--font-size) var(--font-family);
+  }
 }
-@media (min-width: 993px) and (max-width: 1200px) { 
-  :root{ --font-size: 22px; } html, body {font: var(--font-size) var(--font-family);}
+@media (min-width: 993px) and (max-width: 1200px) {
+  :root {
+    --font-size: 22px;
+  }
+  html,
+  body {
+    font: var(--font-size) var(--font-family);
+  }
 }
-@media (min-width: 1201px) and (max-width: 1319px) { 
-  :root{ --font-size: 24px; } html, body {font: var(--font-size) var(--font-family);}
+@media (min-width: 1201px) and (max-width: 1319px) {
+  :root {
+    /* --font-size: 24px; */
+  }
+  html,
+  body {
+    font: var(--font-size) var(--font-family);
+  }
 }
-@media (min-width: 1320px) and (max-width: 1619px) { 
-  :root{ --font-size: 26px; } html, body {font: var(--font-size) var(--font-family);}
+@media (min-width: 1320px) and (max-width: 1619px) {
+  :root {
+    /* --font-size: 26px; */
+  }
+  html,
+  body {
+    font: var(--font-size) var(--font-family);
+  }
 }
-@media (min-width: 1620px) and (max-width: 1879px) { 
-  :root{ --font-size: 28px; } html, body {font: var(--font-size) var(--font-family);}
+@media (min-width: 1620px) and (max-width: 1879px) {
+  :root {
+    --font-size: 28px;
+  }
+  html,
+  body {
+    font: var(--font-size) var(--font-family);
+  }
 }
-@media (min-width: 1880px) { 
-  :root{ --font-size: 30px; } html, body {font: var(--font-size) var(--font-family);}
+@media (min-width: 1880px) {
+  :root {
+    --font-size: 30px;
+  }
+  html,
+  body {
+    font: var(--font-size) var(--font-family);
+  }
 }
-
-
 
 /* website media queries */
 
 @media (max-width: 779px) {
-
   /* styles for screen sizes 779px, should covers 'mobile' and 'tablet' */
   /* style this one first and then use the two others to 'override' some styles (exceptions/details) */
 
-
-
-
-
-
   /* utilities */
 
-  .desktop{display:none!important;}
-  .mobile{display:block;}
-
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: block;
+  }
 }
-
-
 
 @media (max-width: 339px) {
-
   /* use this query to apply style changes to smaller smartphones sizes (like an iPhone 5S or SE 2016), max size of 339px */
-
 }
-
-
 
 @media (max-width: 779px) and (orientation: landscape) {
-
   /* use this query to apply style changes for 'mobile' screen sizes that are flipped in 'landscape' mode */
-
 }
 
-
-
 @media (min-width: 780px) and (max-width: 992px) {
-
   /* use this query to apply style for 'small' desktop screens */
-
 }
 
 /* This is a test animation */
 @-webkit-keyframes move {
   from {
-      background-position: 2px 19px;
-    }
-    to {
-      background-position: 500px 19px;
-    }
+    background-position: 2px 19px;
   }
-  
-  @keyframe move {
+  to {
+    background-position: 500px 19px;
+  }
+}
+
+@keyframe move {
   from {
-      background-position: 2px 19px;
-    }
-    to {
-      background-position: 500px 19px;
-    }
+    background-position: 2px 19px;
   }
-  /* test animation ends here */
+  to {
+    background-position: 500px 19px;
+  }
+}
+/* test animation ends here */
+
+figure {
+  text-align: center;
+  filter: drop-shadow(0px 0px 10px white);
+}
+
+.responsive-images {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.responsive-images figure {
+  flex: 1;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.responsive-images figure img {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .section {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .section.reverse {
+    flex-direction: row;
+  }
+
+  .section figure {
+    margin: 1em;
+    flex: 1;
+  }
+
+  .section p {
+    flex: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .responsive-images {
+    display: unset;
+  }
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.screen {
+  /* height: 100vh;*/
+}
