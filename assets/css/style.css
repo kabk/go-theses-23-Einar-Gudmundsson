@@ -114,7 +114,6 @@ a:hover {
   color: var(--color-text-link-hover);
   /* text-decoration: underline; */
   animation-play-state: running;
-  background-color: rgb(255, 89, 0);
 }
 
 a:focus-visible {
@@ -126,8 +125,6 @@ h1 {
   text-align: center;
   margin-bottom: 0;
   font-family: 'univers';
-  border: 2px solid white;
-  background-color: rgb(255, 89, 0);
   font-size: 10rem;
   font-size: clamp( 10px, 10vw, 100px );
   /* font-size: min( 10vw, 100px ); */
@@ -138,16 +135,12 @@ h2 {
   font-size: 3em;
   font-size: clamp( 10px, 6vw, 60px );
   font-family: 'univers';
-  border: 2px solid white;
-  background-color: rgb(255, 89, 0);
 }
 
 h3 {
   font-size: 2em;
   text-align: center;
   font-family: 'univers';
-  border: 2px solid white;
-  background-color: rgb(255, 89, 0);
 }
 
 h4,
@@ -158,14 +151,23 @@ h6 {
 
 p {
   font-family: "lora", monospace;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+p1 {
+  font-family: "lora";
+  color: orange;
+  margin-left: 3em;
+  margin-right: 3em;
+  font-size: 1em;
+  text-align: center;
 }
 
 ol,
 ul {
   font-size: 1.25em;
   text-align: center;
-  border: 2px solid white;
-  background-color: rgb(255, 89, 0);
 }
 
 /* GENERAL USABILITY */
