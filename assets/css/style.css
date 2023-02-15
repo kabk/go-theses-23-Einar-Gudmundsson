@@ -53,7 +53,7 @@
 
 :root {
   /* Color settings */
-  --color-background: rgb(27, 53, 135);
+  --color-background: rgb(2, 16, 167);
   --color-text: rgb(255, 255, 255);
   --color-text-link: rgba(255, 255, 255);
   --color-text-link-hover: rgb(255, 255, 255);
@@ -100,8 +100,8 @@ a {
   background-position-y: 0%;
   background-size: auto auto;
   background-repeat: repeat-x;
-  background-size: 15px 5px;
-  background-position: 2px 19px;
+  background-size: 1em 1em;
+  background-position: 10px 20px;
   animation: move 15s linear infinite;
   -webkit-animation: move 15s linear infinite;
   animation-play-state: paused;
@@ -157,17 +157,29 @@ p {
 
 p1 {
   font-family: "lora";
-  color: orange;
+  color: rgb(255, 214, 138);
+  font-size: 1em;
+  display: block;
+  text-decoration: underline;
   margin-left: 3em;
   margin-right: 3em;
-  font-size: 1em;
   text-align: center;
+}
+
+p2 {
+  font-family: "lora";
+  font-size: 1em;
+  margin-left: 5em;
+  margin-right: 5em;
+  display: block;
+  text-align: justify;
 }
 
 ol,
 ul {
   font-size: 1.25em;
   text-align: center;
+  list-style-type: none;
 }
 
 /* GENERAL USABILITY */
