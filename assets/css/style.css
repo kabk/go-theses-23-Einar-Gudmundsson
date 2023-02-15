@@ -45,22 +45,9 @@
   font-display: block;
 }
 
-/* @font-face {
-  font-family: "cheltenham";
-  src: url("../fonts/cheltenham/cheltenham-normal.otf"),
-    url("../fonts/cheltenham/cheltenham-normal.otf"),
-    url("../fonts/cheltenham/cheltenham-normal.otf"),
-    url("../fonts/cheltenham/cheltenham-normal.otf") format("embedded-opentype"),
-    url("../fonts/cheltenham/cheltenham-normal.otf") format("truetype");
-  font-weight: normal;
-  font-display: block;
-} */
-
 @font-face {
-  font-family: "cheltenham";
-  src: url("../fonts/cheltenham/Cheltenham-Normal.woff2") format("woff2"),
-       url("../fonts/cheltenham/Cheltenham-Normal.woff") format("woff"),
-       url("../fonts/cheltenham/cheltenham-normal.otf") format("opentype");
+  font-family: "lora3";
+  src: url("../fonts/lora/static/Lora-Regular.ttf") format("truetype");
   font-weight: normal;
   font-display: block;
 }
@@ -154,12 +141,16 @@ h2 {
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
   font-family: 'lora2';
 }
 
-h4,
+h4 {
+  font-size: 1.8em;
+  font-family: 'lora3';
+  text-align: center;
+}
 h5,
 h6 {
   text-align: center;
@@ -167,16 +158,15 @@ h6 {
 
 p {
   font-family: "lora", monospace;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
   font-size: 1.5em;
-  text-align: justify;
 }
 
 p1 {
   font-family: "lora";
   color: rgb(255, 214, 138);
-  font-size: 1em;
+  font-size: 2em;
   display: block;
   text-decoration: underline;
   margin-left: 3em;
@@ -185,16 +175,19 @@ p1 {
 }
 
 p2 {
-  font-family: "lora";
-  font-size: 1em;
+  font-family: "lora3";
+  font-size: 1.5em;
   margin-left: 5em;
   margin-right: 5em;
   display: block;
-  text-align: justify;
 }
 
 p3 {
-
+  font-family: "lora3";
+  font-size: 0.7em;
+  display: block;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 ol,
