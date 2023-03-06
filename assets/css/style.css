@@ -191,7 +191,6 @@ p2 {
   margin-right: 5em;
   font-size: clamp( 10px, 6vw, 20px );
   display: block;
-  text-decoration: underline;
 }
 
 p3 {
