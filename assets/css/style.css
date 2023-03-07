@@ -239,7 +239,7 @@ h2 {
    /* margin-left: clamp( 0.5em, 6vw, 3em );
    margin-right: clamp( 0.5em, 6vw, 3em ); */
    /* text-decoration: underline; */
-   text-shadow: 5px 5px #152b3f;
+   text-shadow: 3px 3px #152b3f;
 
 }
 
@@ -263,20 +263,47 @@ h4 {
 h5 {
   font-size: clamp( 10px, 6vw, 20px );
   text-align: center;
-  font-family: 'lora2';
+  font-family: 'pacifico';
     overflow: hidden;
-    background-color: rgb(0, 0, 255);
+    /* background-color: rgb(0, 0, 255); */
     position: fixed;
-    right:0;
+    right:50%;
     top:0;
     margin:0;
     padding:0;
-    width:12%;
+    width:15%;
+  height: 50px;
+  background-color:rgb(255, 0, 0);
+  border-radius: 50%;
 }
 
 
 h6 {
+  font-size: clamp( 10px, 6vw, 20px );
   text-align: center;
+  font-family: 'pacifico';
+    color:rgb(130, 255, 62);
+    text-shadow: 1px 1px #152b3f;
+}
+
+h7 {
+  font-size: clamp( 15px, 3vw, 25px );
+  text-align: center;
+  font-family: 'pacifico';
+    overflow: hidden;
+    position: fixed;
+    left:0;
+    top:0;
+    margin:0.5em;
+    padding:0;
+    width:clamp(30%, 10vw, 40%);
+    color:rgb(130, 255, 62);
+    text-shadow: 1px 1px #152b3f;
+
+    border-color: red;
+    border-style: dashed;
+   border-width: 5px;
+   background-color: rgb(0, 2, 113);
 }
 
 p {
@@ -290,21 +317,24 @@ p {
 }
 
 p1 {
-  font-family: "lora3";
-  color: rgb(246, 255, 0);
+  /* font-family: "lora3"; */
+  font-family: "dancing";
+  color: rgb(255, 209, 128);
   font-size: 1em;
   display: block;
-  margin-left: 4em;
-  margin-right: 4em;
+  /* margin-left: 4em;
+  margin-right: 4em; */
   text-align: center;
+  width: 60%;
+  text-shadow: 0px 0px 5px #00203e;
 }
 
 p2 {
   font-family: "lora3";
   color: rgb(255, 255, 255);
   font-size: 1.2em;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 10em;
+  margin-right: 10em;
   font-size: clamp( 10px, 6vw, 20px );
   display: block;
   background-color:rgb(0, 0, 255)
@@ -641,12 +671,27 @@ figure {
     width: 50%;
     justify-content: space-around;
   }
+
 }
 
 @media (max-width: 600px) {
   .responsive-images {
     display: unset;
   }
+
+  h5 {
+    text-align: center;
+    font-family: 'lora2';
+      overflow: hidden;
+      background-color: rgb(0, 0, 255);
+      position: fixed;
+      right:0;
+      top:0;
+      margin:0;
+      padding:0;
+      width:5%;
+  }
+
 }
 
 .text-align-center {
