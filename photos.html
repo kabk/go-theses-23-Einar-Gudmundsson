@@ -1,59 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon/favicon.png" sizes="32x32" />
+    <link rel="icon" href="assets/images/favicon/favicon.png" sizes="192x192" />
+
 
 <head>
-  <title> Photo Album </title>
+  <h2> Photo Album </h2>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css?ver=1.0">
+  <script type="text/javascript" src="assets/js/gallery.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-  <h2> Photo Album </h2>
-  <p> Archival photographs from Guðmundur Thoroddsen and his friends, from their travels on Drífa and beyond.
-  </p>
+  <p4> Archival photographs from Guðmundur Thoroddsen and his friends, from their travels on Drífa and beyond.
+  </p4>
 
-  <div class="column">
-    <img src="content/photos/pic_1.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_2.jpeg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_3.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_4.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_5.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_6.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_7.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_8.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_9.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_10.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_11.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_12.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_13.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_14.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_15.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_16.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_17.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_18.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_19.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_20.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_21.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_22.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_23.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_24.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_25.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_26.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_27.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_28.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_29.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_30.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_31.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_32.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_33.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_34.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_35.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_36.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_37.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_38.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_39.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_40.jpg" width="990" height="700" alt="" />
-    <img src="content/photos/pic_41.jpg" width="990" height="700" alt="" />
 
+  <div class="gallery-container">
+    <div class="thumbnails"></div>
+    <div class="slides">
+      <div><img src="content/photos/pic_1.jpg"></div>
+      <div><img src="content/photos/pic_2.jpg"></div>
+      <div><img src="content/photos/pic_3.jpg"></div>
+      <div><img src="content/photos/pic_4.jpg"></div>
+      <div><img src="content/photos/pic_5.jpg"></div>
+      <div><img src="content/photos/pic_6.jpg"></div>
+      <div><img src="content/photos/pic_7.jpg"></div>
+      <div><img src="content/photos/pic_8.jpg"></div>
+      <div><img src="content/photos/pic_9.jpg"></div>
+      <div><img src="content/photos/pic_10.jpg"></div>
+      <div><img src="content/photos/pic_11.jpg"></div>
+      <div><img src="content/photos/pic_12.jpg"></div>
+      <div><img src="content/photos/pic_13.jpg"></div>
+      <div><img src="content/photos/pic_14.jpg"></div>
+      <div><img src="content/photos/pic_15.jpg"></div>
+      <div><img src="content/photos/pic_16.jpg"></div>
+      <div><img src="content/photos/pic_17.jpg"></div>
+      <div><img src="content/photos/pic_18.jpg"></div>
+      <div><img src="content/photos/pic_19.jpg"></div>
+      <div><img src="content/photos/pic_20.jpg"></div>
+      <div><img src="content/photos/pic_21.jpg"></div>
+      <div><img src="content/photos/pic_22.jpg"></div>
+      <div><img src="content/photos/pic_23.jpg"></div>
+      <div><img src="content/photos/pic_24.jpg"></div>
+      <div><img src="content/photos/pic_25.jpg"></div>
+      <div><img src="content/photos/pic_26.jpg"></div>
+      <div><img src="content/photos/pic_27.jpg"></div>
+      <div><img src="content/photos/pic_28.jpg"></div>
+      <div><img src="content/photos/pic_29.jpg"></div>
+      <div><img src="content/photos/pic_30.jpg"></div>
+      <div><img src="content/photos/pic_31.jpg"></div>
+      <div><img src="content/photos/pic_32.jpg"></div>
+      <div><img src="content/photos/pic_33.jpg"></div>
+      <div><img src="content/photos/pic_34.jpg"></div>
+      <div><img src="content/photos/pic_35.jpg"></div>
+      <div><img src="content/photos/pic_36.jpg"></div>
+      <div><img src="content/photos/pic_37.jpg"></div>
+      <div><img src="content/photos/pic_38.jpg"></div>
+      <div><img src="content/photos/pic_39.jpg"></div>
+      <div><img src="content/photos/pic_40.jpg"></div>
+      <div><img src="content/photos/pic_41.jpg"></div>
+      <div><img src="content/photos/pic_42.jpg"></div>
+      <div><img src="content/photos/pic_43.jpg"></div>
+      <div><img src="content/photos/pic_44.jpg"></div>
+      <div><img src="content/photos/pic_45.jpg"></div>
+      <div><img src="content/photos/pic_46.jpg"></div>
+      <div><img src="content/photos/pic_47.jpg"></div>
+      <div><img src="content/photos/pic_48.jpg"></div>
+      <div><img src="content/photos/pic_49.jpg"></div>
+      <div><img src="content/photos/pic_50.jpg"></div>
+      <div><img src="content/photos/pic_51.jpg"></div>
+      <div><img src="content/photos/pic_52.jpg"></div>
+      <div><img src="content/photos/pic_53.jpg"></div>
+      <div><img src="content/photos/pic_54.jpg"></div>
+      <div><img src="content/photos/pic_55.jpg"></div>
+      <div><img src="content/photos/pic_56.jpg"></div>
+      <div><img src="content/photos/pic_57.jpg"></div>
+      <div><img src="content/photos/pic_58.jpg"></div>
+      <div><img src="content/photos/pic_59.jpg"></div>
+      <div><img src="content/photos/pic_60.jpg"></div>
+      <div><img src="content/photos/pic_61.jpg"></div>
+      <div><img src="content/photos/pic_62.jpg"></div>
+      <div><img src="content/photos/pic_63.jpg"></div>
+      <div><img src="content/photos/pic_64.jpg"></div>
+      <div><img src="content/photos/pic_65.jpg"></div>
+      <div><img src="content/photos/pic_66.jpg"></div>
+      <div><img src="content/photos/pic_67.jpg"></div>
+      <div><img src="content/photos/pic_68.jpg"></div>
+      <div><img src="content/photos/pic_69.jpg"></div>
+      <div><img src="content/photos/pic_70.jpg"></div>
+      <div><img src="content/photos/pic_71.jpg"></div>
+      <div><img src="content/photos/pic_72.jpg"></div>
+      <div><img src="content/photos/pic_73.jpg"></div>
+      <div><img src="content/photos/pic_74.jpg"></div>
+      <div><img src="content/photos/pic_75.jpg"></div>
+      <div><img src="content/photos/pic_76.jpg"></div>
+      <div><img src="content/photos/pic_77.jpg"></div>
+      <div><img src="content/photos/pic_78.jpg"></div>
+      <div><img src="content/photos/pic_79.jpg"></div>
+      <div><img src="content/photos/pic_80.jpg"></div>
+      <div><img src="content/photos/pic_81.jpg"></div>
+      <div><img src="content/photos/pic_82.jpg"></div>
+      <div><img src="content/photos/pic_83.jpg"></div>
+      <div><img src="content/photos/pic_84.jpg"></div>
+      <div><img src="content/photos/pic_85.jpg"></div>
+      <div><img src="content/photos/pic_86.jpg"></div>
+      <div><img src="content/photos/pic_87.jpg"></div>
+      <div><img src="content/photos/pic_88.jpg"></div>
+      <div><img src="content/photos/pic_89.jpg"></div>
+      <div><img src="content/photos/pic_90.jpg"></div>
+      <div><img src="content/photos/pic_91.jpg"></div>
+      <div><img src="content/photos/pic_92.jpg"></div>
+      <div><img src="content/photos/pic_93.jpg"></div>
+      <div><img src="content/photos/pic_94.jpg"></div>
+      <div><img src="content/photos/pic_95.jpg"></div>
+      <div><img src="content/photos/pic_96.jpg"></div>
+      <div><img src="content/photos/pic_97.jpg"></div>
+      <div><img src="content/photos/pic_98.jpg"></div>
+      <div><img src="content/photos/pic_99.jpg"></div>
+      <div><img src="content/photos/pic_100.jpg"></div>
+      <div><img src="content/photos/pic_101.jpg"></div>
+      <div><img src="content/photos/pic_102.jpg"></div>
+      <div><img src="content/photos/pic_103.jpg"></div>
+      <div><img src="content/photos/pic_104.jpg"></div>
+      <div><img src="content/photos/pic_105.jpg"></div>
+    </div>
   </div>
+
 </body>
 
 </html>

@@ -52,6 +52,42 @@
   font-display: block;
 }
 
+@font-face {
+  font-family: "lobster";
+  src: url("../fonts/lobster/Lobster-Regular.woff2") format("woff");
+  font-weight: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "lilita";
+  src: url("../fonts/lilita_one/LilitaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "gloock";
+  src: url("../fonts/gloock/Gloock-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "pacifico";
+  src: url("../fonts/pacifico/Pacifico-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "dancing";
+  src: url("../fonts/dancing_script/DancingScript-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-display: block;
+}
+
+
 /* VARIABLES */
 
 :root {
@@ -74,7 +110,6 @@
 html,
 body {
   width: 100%;
-  background-image: url(/content/background_sky.jpg);
 }
 
 html {
@@ -93,6 +128,63 @@ body {
   height: auto;
   overflow-y: auto;
 }
+
+/* tryout gallery image scroller */
+
+.gallery-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnails {
+  position: absolute;
+  bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.thumbnails div {
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  background: #aaa;
+  border-radius: 100%;
+}
+
+.thumbnails div.highlighted {
+  background-color: #777;
+}
+
+.slides {
+  margin: 0 16px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  width: 540px;
+  padding: 0 0.25rem;
+  height: 720px;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+}
+
+.slides img {
+  width: 540px;
+  object-fit: contain;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+/* end of gallery images scroller thingy */
 
 a {
   color: var(--color-text-link);
@@ -137,17 +229,25 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 3em;
-  font-size: clamp( 10px, 6vw, 50px );
-  font-family: 'lora2';
+  /* font-size: 3em; */
+  font-size: clamp( 2em, 6vw, 3em );
+  font-family: 'pacifico';
+  color:rgb(255, 111, 0);
+   /* -webkit-text-stroke: 0.025px black; */
+   border-style: dashed;
+   border-width: 10px;
+   /* margin-left: clamp( 0.5em, 6vw, 3em );
+   margin-right: clamp( 0.5em, 6vw, 3em ); */
+   /* text-decoration: underline; */
+   text-shadow: 5px 5px #152b3f;
 
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 2em;
   font-size: clamp( 10px, 6vw, 30px );
   text-align: center;
-  font-family: 'lora2';
+  font-family: 'pacifico';
 
 }
 
@@ -160,7 +260,21 @@ h4 {
   margin-right: 1em;
 
 }
-h5,
+h5 {
+  font-size: clamp( 10px, 6vw, 20px );
+  text-align: center;
+  font-family: 'lora2';
+    overflow: hidden;
+    background-color: rgb(0, 0, 255);
+    position: fixed;
+    right:0;
+    top:0;
+    margin:0;
+    padding:0;
+    width:12%;
+}
+
+
 h6 {
   text-align: center;
 }
@@ -172,6 +286,7 @@ p {
   font-size: 1.2em;
   font-size: clamp( 10px, 6vw, 20px );
   background-color: rgb(246, 255, 0);
+  width: 80%
 }
 
 p1 {
@@ -201,6 +316,16 @@ p3 {
   display: block;
   margin-left: 2em;
   margin-right: 2em;
+}
+
+p4 {
+  font-family: "lora", monospace;
+  margin-left: 2em;
+  margin-right: 2em;
+  font-size: 5em;
+  font-size: clamp( 10px, 6vw, 20px );
+  background-color: rgb(246, 255, 0);
+  text-align: center;
 }
 
 ol,
@@ -311,7 +436,7 @@ Resources
 
 /* responsive typeface */
 
-@media (max-width: 298px) {
+/* @media (max-width: 298px) {
   :root {
     --font-size: 15px;
   }
@@ -319,8 +444,8 @@ Resources
   body {
     font: var(--font-size) var(--font-family);
   }
-}
-@media (min-width: 299px) and (max-width: 339px) {
+} */
+/* @media (min-width: 299px) and (max-width: 339px) {
   :root {
     --font-size: 16px;
   }
@@ -355,8 +480,8 @@ Resources
   body {
     font: var(--font-size) var(--font-family);
   }
-}
-@media (min-width: 780px) and (max-width: 992px) {
+} */
+/* @media (min-width: 780px) and (max-width: 992px) {
   :root {
     --font-size: 20px;
   }
@@ -377,16 +502,16 @@ Resources
 @media (min-width: 1201px) and (max-width: 1319px) {
   :root {
     /* --font-size: 24px; */
-  }
+  /* }
   html,
   body {
     font: var(--font-size) var(--font-family);
   }
-}
-@media (min-width: 1320px) and (max-width: 1619px) {
+} */
+/* @media (min-width: 1320px) and (max-width: 1619px) {
   :root {
     /* --font-size: 26px; */
-  }
+  /* }
   html,
   body {
     font: var(--font-size) var(--font-family);
@@ -409,38 +534,38 @@ Resources
   body {
     font: var(--font-size) var(--font-family);
   }
-}
+} */
 
 /* website media queries */
 
-@media (max-width: 779px) {
+/* @media (max-width: 779px) { */
   /* styles for screen sizes 779px, should covers 'mobile' and 'tablet' */
   /* style this one first and then use the two others to 'override' some styles (exceptions/details) */
 
   /* utilities */
 
-  .desktop {
+  /* .desktop {
     display: none !important;
   }
   .mobile {
     display: block;
   }
-}
+} */
 
-@media (max-width: 339px) {
+/* @media (max-width: 339px) {
   /* use this query to apply style changes to smaller smartphones sizes (like an iPhone 5S or SE 2016), max size of 339px */
-}
+/* }
 
 @media (max-width: 779px) and (orientation: landscape) {
   /* use this query to apply style changes for 'mobile' screen sizes that are flipped in 'landscape' mode */
-}
+/* } */
 
-@media (min-width: 780px) and (max-width: 992px) {
+/* @media (min-width: 780px) and (max-width: 992px) { */
   /* use this query to apply style for 'small' desktop screens */
-}
+/* } */
 
 /* This is a test animation */
-@-webkit-keyframes move {
+/* @-webkit-keyframes move {
   from {
     background-position: 2px 19px;
   }
@@ -456,13 +581,17 @@ Resources
   to {
     background-position: 500px 19px;
   }
-}
+} */ 
 /* test animation ends here */
 
 figure {
   text-align: center;
   /* filter: drop-shadow(0px 0px 2px rgb(255, 0, 0)); */
-  background-color: rgb(0, 0, 255);
+  /* background-color: rgb(0, 0, 255); */
+  border-style: dashed;
+   border-width: 10px;
+   color:rgb(255, 111, 0);
+   background-color:rgb(48, 101, 106)
 }
 
 .responsive-images {
@@ -498,6 +627,19 @@ figure {
 
   .section p {
     flex: 2;
+  }
+  .p {
+    width: 100%
+  }
+  .main-nav {
+    position: fixed;
+    bottom: 0;
+  
+    font-size: 0.6em;
+    display: flex;
+  
+    width: 50%;
+    justify-content: space-around;
   }
 }
 
