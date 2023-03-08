@@ -97,10 +97,10 @@
   --color-text-link: rgba(255, 255, 255);
   --color-text-link-hover: rgb(255, 255, 255);
   /* Font settings */
-  --font-family: "univers", "cheltenham", "lora";
+  /* --font-family: "univers", "cheltenham", "lora";
   font-size: 24px;
   font-size: clamp( 20px, 4vw, 32px );
-  --font-size: 1.5rem;
+  --font-size: 1.5rem; */
   /* Margins settings */
   --margin: 4rem;
 }
@@ -127,6 +127,9 @@ body {
   width: 100%;
   height: auto;
   overflow-y: auto;
+  /* border-style: dashed;
+  border-width: 10px;
+  border-color: rgb(255, 111, 0); */
 }
 
 .compass {
@@ -207,10 +210,6 @@ body {
 
 /* end of gallery images scroller thingy */
 
-album-button {
-
-}
-
 a {
   color: var(--color-text-link);
   /* text-decoration: underline; */
@@ -229,6 +228,10 @@ a {
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; */
+}
+
+album-button {
+  background-color: red;
 }
 
 a:hover {
@@ -255,16 +258,16 @@ h1 {
 h2 {
   text-align: center;
   /* font-size: 3em; */
-  font-size: clamp( 2em, 6vw, 3em );
+  font-size: clamp( 1.5em, 20vw, 2em );
   font-family: 'pacifico';
   color:rgb(255, 111, 0);
    /* -webkit-text-stroke: 0.025px black; */
    border-style: dashed;
-   border-width: 10px;
+   border-width: 8px;
    /* margin-left: clamp( 0.5em, 6vw, 3em );
    margin-right: clamp( 0.5em, 6vw, 3em ); */
    /* text-decoration: underline; */
-   text-shadow: 3px 3px #152b3f;
+   text-shadow: 2px 2px #152b3f;
 
 }
 
@@ -288,17 +291,21 @@ h4 {
 
 }
 h5 {
-  font-size: clamp( 20px, 6vw, 30px );
+  font-size: clamp( 1em, 10vw, 1.5em );
   text-align: center;
   font-family: 'pacifico';
     overflow: hidden;
     /* background-color: rgb(0, 0, 255); */
     position: fixed;
-    right:50%;
+    right:20%;
     top:0;
-    margin:5px;
+    margin:0.5em;
     padding:0;
     width:15%;
+    background-color:rgb(0, 2, 113);
+    border-style: dashed;
+      border-width: 5px;
+      border-color:rgb(255, 0, 0);
 }
 
 
@@ -311,7 +318,7 @@ h6 {
 }
 
 h7 {
-  font-size: clamp( 15px, 3vw, 25px );
+  font-size: clamp( 1em, 10vw, 1.5em );
   text-align: center;
   font-family: 'pacifico';
     overflow: hidden;
@@ -342,21 +349,24 @@ p {
 
 p1 {
   /* font-family: "lora3"; */
+  position: center;
   font-family: "dancing";
-  color: rgb(255, 209, 128);
-  font-size: 1em;
+  color: rgb(0, 0, 0);
+  font-size: clamp(1em, 50vw, 2em);
   display: block;
   /* margin-left: 4em;
   margin-right: 4em; */
   text-align: center;
-  width: 60%;
-  text-shadow: 0px 0px 5px #00203e;
+  width: 50%;
+  background-color: white;
+  border-radius: 50%;
+  /* text-shadow: 1px 1px 0px #00203e; */
 }
 
 p2 {
   font-family: "lora3";
   color: rgb(255, 255, 255);
-  font-size: 1.2em;
+  font-size: 1.0em;
   margin-left: 10em;
   margin-right: 10em;
   font-size: clamp( 10px, 6vw, 20px );
@@ -384,7 +394,7 @@ p4 {
 
 ol,
 ul {
-  font-size: clamp( 10px, 3vw, 15px );
+  font-size: clamp( 1em, 10vw, 2em );
   text-align: center;
   list-style-type: none;
   font-family: 'lora2';
@@ -392,7 +402,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(0, 0, 255);
+    background-color: rgb(0, 2, 113);
     position: fixed;
 }
 
@@ -416,9 +426,11 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
+
 li a:hover, .dropdown:hover .dropbtn {
   background-color: rgb(255, 0, 0);
 }
+
 
 li.dropdown {
   display: inline-block;
@@ -448,6 +460,7 @@ li.dropdown {
 }
 
 /* end of tryout */
+
 #fixed-image {
   position: fixed;
   bottom: 40px;
@@ -701,6 +714,22 @@ figure {
     justify-content: space-around;
   } */
 
+  p1 {
+    /* font-family: "lora3"; */
+    position: center;
+    font-family: "dancing";
+    color: rgb(0, 0, 0);
+    font-size: clamp(1em, 50vw, 2em);
+    display: block;
+    /* margin-left: 4em;
+    margin-right: 4em; */
+    text-align: center;
+    width: 80%;
+    background-color: white;
+    border-radius: 50%;
+    /* text-shadow: 1px 1px 0px #00203e; */
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -709,16 +738,51 @@ figure {
   }
 
   h5 {
+    font-size: clamp( 1em, 10vw, 1.5em );
     text-align: center;
-    font-family: 'lora2';
+    font-family: 'pacifico';
       overflow: hidden;
-      background-color: rgb(0, 0, 255);
+      /* background-color: rgb(0, 0, 255); */
       position: fixed;
       right:0;
-      top:0;
-      margin:0;
+      top:85%;
+      margin:0.5em;
       padding:0;
-      width:5%;
+      width:25%;
+      background-color:rgb(0, 2, 113);
+      border-style: dashed;
+        border-width: 5px;
+        border-color:rgb(255, 0, 0);
+  }
+
+  h7 {
+    font-size: 1.6em;
+    text-align: center;
+    font-family: 'pacifico';
+      overflow: hidden;
+      position: fixed;
+      left:0;
+      top:0;
+      margin:0.5em;
+      padding:0;
+      width:50%;
+      color:rgb(130, 255, 62);
+      text-shadow: 1px 1px #ff0000;
+  
+      border-color: red;
+      border-style: dashed;
+     border-width: 5px;
+     background-color: rgb(0, 2, 113);
+  }
+
+  figure {
+    text-align: center;
+    /* filter: drop-shadow(0px 0px 2px rgb(255, 0, 0)); */
+    /* background-color: rgb(0, 0, 255); */
+    border-style: dashed;
+     border-width: 10px;
+     color:rgb(255, 111, 0);
+     background-color:rgb(48, 101, 106)
   }
 
 }
@@ -734,6 +798,7 @@ figure {
 .main-nav {
   position: fixed;
   bottom: 0;
+  float: center;
 
   font-size: 0.6em;
   display: flex;
