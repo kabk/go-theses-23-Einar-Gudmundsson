@@ -230,10 +230,6 @@ a {
   -webkit-text-decoration-skip: objects; */
 }
 
-album-button {
-  background-color: red;
-}
-
 a:hover {
   color: var(--color-text-link-hover);
   /* text-decoration: underline; */
@@ -283,11 +279,11 @@ h3 {
 
 h4 {
   font-size: 1em;
-  font-family: 'lora2';
+  font-family: 'dancing';
   text-align: center;
   font-size: clamp( 10px, 6vw, 30px );
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 4em;
+  margin-right: 4em;
 
 }
 h5 {
@@ -358,7 +354,7 @@ p1 {
   margin-right: 4em; */
   text-align: center;
   width: 50%;
-  background-color: white;
+  background-image: image("content/circle_photos/cloud.png");
   border-radius: 50%;
   /* text-shadow: 1px 1px 0px #00203e; */
 }
@@ -714,6 +710,18 @@ figure {
     justify-content: space-around;
   } */
 
+  .compass-2 {
+    display: none;
+  }
+
+
+}
+
+@media (max-width: 600px) {
+  .responsive-images {
+    display: unset;
+  }
+
   p1 {
     /* font-family: "lora3"; */
     position: center;
@@ -725,16 +733,7 @@ figure {
     margin-right: 4em; */
     text-align: center;
     width: 80%;
-    background-color: white;
-    border-radius: 50%;
     /* text-shadow: 1px 1px 0px #00203e; */
-  }
-
-}
-
-@media (max-width: 600px) {
-  .responsive-images {
-    display: unset;
   }
 
   h5 {
@@ -750,9 +749,9 @@ figure {
       padding:0;
       width:25%;
       background-color:rgb(0, 2, 113);
-      border-style: dashed;
+      border-style: solid;
         border-width: 5px;
-        border-color:rgb(255, 0, 0);
+        border-color:rgb(255, 0, 0)
   }
 
   h7 {
@@ -783,6 +782,32 @@ figure {
      border-width: 10px;
      color:rgb(255, 111, 0);
      background-color:rgb(48, 101, 106)
+  }
+
+  .compass {
+    display: none;
+  }
+  
+
+  .compass-2 {
+    position: fixed;
+    top: 5%;
+    right: 3px;
+    margin-top: -50px;
+    margin-left: -50px;
+  
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+  
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
   }
 
 }
