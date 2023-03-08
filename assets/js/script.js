@@ -28,7 +28,18 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 
-window.addEventListener('scroll', function() {
+window.addEventListener(
+  "scroll",
+  () => {
+    document.body.style.setProperty(
+      "--scroll",
+      window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+    );
+  },
+  false
+);
+
+// window.addEventListener('scroll', function() {
   //var scrollPosition = window.scrollY;
   //var windowHeight = window.innerHeight;
   //var imageWidth = image.clientWidth;
@@ -49,7 +60,7 @@ window.addEventListener('scroll', function() {
   //}
 
   //image.style.left = position + 'px';
-});
+// });
 
 
 // album 
