@@ -146,3 +146,58 @@ window.addEventListener(
 // 	project_blend.addEventListener( 'click', closeProject );
 
 // } );
+
+// // Get references to the button, modal, and close button elements
+// var openModalBtn = document.getElementById("openModal");
+// var modal = document.getElementById("myModal");
+// var span = document.getElementsByClassName("close")[0];
+
+// // Add a click event listener to the button
+// openModalBtn.addEventListener("click", function() {
+//   modal.style.display = "block"; // Show the modal
+// });
+
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+
+// // Example event listeners to open the modal from a link or the modal itself
+// var link = document.getElementById("myLink");
+// link.onclick = function(event) {
+//   event.preventDefault(); // Prevent the link from navigating to the URL
+//   modal.style.display = "block"; // Show the modal
+// }
+
+// modal.onclick = function() {
+//   modal.style.display = "block"; // Show the modal
+//   // Load content into the modal here
+// }
+
+
+// NEW JS
+
+// var openModalBtn = document.getElementById("openModal");
+// var modal = document.getElementById("myModal");
+// var span = document.getElementsByClassName("close")[0];
+
+// openModalBtn.addEventListener("click", function() {
+//   modal.style.display = "block";
+// });
+
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
