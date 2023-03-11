@@ -1,4 +1,60 @@
+body {
+    background-color: rgb(255, 111, 0);
+}
+
 .gallery-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .thumbnails {
+    position: absolute;
+    bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+  }
+  
+  .thumbnails div {
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    background: #aaa;
+    border-radius: 100%;
+  }
+  
+  .thumbnails div.highlighted {
+    background-color: #777;
+  }
+  
+  .slides {
+      image: contain;
+      top: 5%;
+    margin: 0 16px;
+    display: flex;
+    position: fixed;
+    gap: 1rem;
+    width: 90%;
+    padding: 0 0.25rem;
+    height: 720px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+  
+  .slides img {
+      border-style: solid;
+      border-width: 5px;
+      color: black;
+    width: 700px;
+    object-fit: contain;
+  }
+  
+  .slides::-webkit-scrollbar {
+    display: none;
+  }
+
+/* .gallery-container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -49,4 +105,4 @@
   
   .slides::-webkit-scrollbar {
     display: none;
-  }
+  } */

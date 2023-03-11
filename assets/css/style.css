@@ -193,15 +193,15 @@ body {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color:rgb(130, 255, 62);
+  background-color: rgb(255, 111, 0);
   margin-top:5%;
   margin-left:5%;
   margin-right:5%;
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 30px;
   border: 30px groove rgb(0, 229, 255);
   width: 85%; /* Could be more or less, depending on screen size */
-  box-shadow: 5px 5px 5px 5px black;
+  box-shadow: 2px 2px 2px 5px black;
 }
 
 /* The Close Button */
@@ -241,6 +241,8 @@ figure.papa {
 
 a {
   color: var(--color-text-link);
+  font-family: 'pacifico';
+  font-size: 2em;
   /* text-decoration: underline; */
   /* padding-bottom: 1em;
   background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg");
