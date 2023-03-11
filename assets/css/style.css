@@ -16,7 +16,7 @@
 @font-face {
   font-family: "lora";
   src: url("../fonts/lora/static/Lora-Italic.ttf") format("truetype");
-/*   
+  /*   
   ("../fonts/lora/static/Lora-Bold.ttf"),
   url("../fonts/lora/static/Lora-BoldItalic.ttf"),
   url("../fonts/lora/static/Lora-Italic.ttf"),
@@ -32,7 +32,7 @@
 @font-face {
   font-family: "lora2";
   src: url("../fonts/lora/static/Lora-Bold.ttf") format("truetype");
-/*   
+  /*   
   ("../fonts/lora/static/Lora-Bold.ttf"),
   url("../fonts/lora/static/Lora-BoldItalic.ttf"),
   url("../fonts/lora/static/Lora-Italic.ttf"),
@@ -90,6 +90,7 @@
 
 /* VARIABLES */
 
+
 :root {
   /* Color settings */
   --color-background: rgb(138, 138, 138);
@@ -102,15 +103,12 @@
   font-size: clamp( 20px, 4vw, 32px );
   --font-size: 1.5rem; */
   /* Margins settings */
-  --margin: 4rem;
+  /* --margin: 4rem; */
 }
 
 /* GENERAL STYLES */
 
-html,
-body {
-  width: 100%;
-}
+
 
 html {
   font: var(--font-size) var(--font-family);
@@ -130,6 +128,12 @@ body {
   /* border-style: dashed;
   border-width: 10px;
   border-color: rgb(255, 111, 0); */
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
 }
 
 .compass {
@@ -161,32 +165,37 @@ body {
 /* tryout gallery image scroller */
 
 .button {
-  font-size: clamp( 1em, 10vw, 1.5em );
+  font-size: clamp(1em, 10vw, 1.5em);
   text-align: center;
   font-family: 'pacifico';
-    overflow: hidden;
-    /* background-color: rgb(0, 0, 255); */
-    position: fixed;
-    right:0;
-    top:0;
-    margin:0.5em;
-    padding:0;
-    width:15%;
-    background-color:rgb(0, 2, 113);
-      border-style: solid;
-        border-width: 5px;
-        border-color:rgb(255, 0, 0)
+  overflow: hidden;
+  /* background-color: rgb(0, 0, 255); */
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 0.5em;
+  padding: 0;
+  width: 15%;
+  background-color: rgb(0, 2, 113);
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(255, 0, 0)
 }
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   right: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
   /* overflow: auto; */
 
 }
@@ -194,13 +203,14 @@ body {
 /* Modal Content/Box */
 .modal-content {
   background-color: rgb(255, 111, 0);
-  margin-top:5%;
-  margin-left:5%;
-  margin-right:5%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
   /* padding: 10px; */
   border-radius: 30px;
   border: 30px groove rgb(0, 229, 255);
-  width: 85%; /* Could be more or less, depending on screen size */
+  width: 85%;
+  /* Could be more or less, depending on screen size */
   box-shadow: 2px 2px 2px 5px black;
 }
 
@@ -221,7 +231,7 @@ body {
 
 iframe {
   width: 100%;
-height: 600px;
+  height: 600px;
   border: none;
 }
 
@@ -232,7 +242,8 @@ height: 600px;
 
 
 figure.papa {
-  margin-top: 6em;
+  margin: auto;
+  margin-top: 5%;
   position: center;
   display: absolute;
   border-radius: 30px;
@@ -278,7 +289,7 @@ h1 {
   margin-bottom: 0;
   font-family: 'lora2';
   font-size: 10rem;
-  font-size: clamp( 10px, 10vw, 100px );
+  font-size: clamp(10px, 10vw, 100px);
   /* font-size: min( 10vw, 100px ); */
   /* -webkit-text-stroke: 2px orangered; */
 }
@@ -288,28 +299,29 @@ h2 {
   /* font-size: 3em; */
   font-size: 2.5em;
   font-family: 'pacifico';
-  color:rgb(255, 111, 0);
+  color: rgb(255, 111, 0);
   margin-left: 20%;
   margin-right: 20%;
-  background-color:rgb(48, 101, 106);
-   /* -webkit-text-stroke: 0.025px black; */
-   border: groove rgb(255, 111, 0);;
-   border-radius: 30px;
-   border-width: 10px;
-   /* margin-left: clamp( 0.5em, 6vw, 3em );
+  background-color: rgb(48, 101, 106);
+  /* -webkit-text-stroke: 0.025px black; */
+  border: groove rgb(255, 111, 0);
+  ;
+  border-radius: 30px;
+  border-width: 10px;
+  /* margin-left: clamp( 0.5em, 6vw, 3em );
    margin-right: clamp( 0.5em, 6vw, 3em ); */
-   /* text-decoration: underline; */
-   text-shadow: 2px 2px #152b3f;
+  /* text-decoration: underline; */
+  text-shadow: 2px 2px #152b3f;
 
 }
 
 h3 {
   font-size: 2em;
-  font-size: clamp( 20px, 10vw, 30px );
+  font-size: clamp(20px, 10vw, 30px);
   text-align: center;
   font-family: 'pacifico';
-  color:rgb(255, 111, 0);
-   text-shadow: 2px 2px #152b3f;
+  color: rgb(255, 111, 0);
+  text-shadow: 2px 2px #152b3f;
 
 }
 
@@ -317,89 +329,98 @@ h4 {
   font-size: 1em;
   font-family: 'dancing';
   text-align: center;
-  font-size: clamp( 10px, 6vw, 30px );
+  font-size: clamp(10px, 6vw, 30px);
   margin-left: 4em;
   margin-right: 4em;
 
 }
+
 h5 {
-  font-size: clamp( 1em, 10vw, 1.5em );
+  font-size: clamp(1em, 10vw, 1.5em);
   text-align: center;
   font-family: 'pacifico';
-    overflow: hidden;
-    /* background-color: rgb(0, 0, 255); */
-    position: fixed;
-    right:0;
-    top:0;
-    margin:0.5em;
-    padding:0;
-    width:15%;
-    background-color:rgb(0, 2, 113);
-      border-style: solid;
-        border-width: 5px;
-        border-color:rgb(255, 0, 0)
+  overflow: hidden;
+  /* background-color: rgb(0, 0, 255); */
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 0.5em;
+  padding: 0;
+  width: 15%;
+  background-color: rgb(0, 2, 113);
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(255, 0, 0)
 }
 
 
 h6 {
-  font-size: clamp( 15px, 3vw, 25px );
+  font-size: clamp(15px, 3vw, 25px);
   text-align: center;
   font-family: 'pacifico';
-    color:rgb(130, 255, 62);
-    text-shadow: 1px 1px #152b3f;
-    line-height: 98%;
+  color: rgb(130, 255, 62);
+  text-shadow: 1px 1px #152b3f;
+  line-height: 98%;
 }
 
 h7 {
-  font-size: clamp( 1em, 10vw, 1.5em );
+  font-size: clamp(1em, 10vw, 1.5em);
   text-align: center;
   font-family: 'pacifico';
-    overflow: hidden;
-    position: fixed;
-    left:0;
-    top:0;
-    margin:0.5em;
-    padding:0;
-    width:clamp(30%, 10vw, 40%);
-    color:rgb(130, 255, 62);
-    text-shadow: 1px 1px #ff0000;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0.5em;
+  padding: 0;
+  width: clamp(30%, 10vw, 40%);
+  color: rgb(130, 255, 62);
+  text-shadow: 1px 1px #ff0000;
 
-    border-color: red;
-    border-style: dashed;
-   border-width: 5px;
-   background-color: rgb(0, 2, 113);
+  border-color: red;
+  border-style: dashed;
+  border-width: 5px;
+  background-color: rgb(0, 2, 113);
 }
 
 strong {
-  font-family:"lora2";
+  font-family: "lora2";
 }
 
 p.fig {
-  font-family:"lora3";
+  font-family: "lora3";
   font-size: 1em;
-  color:rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
   background-color: none;
 }
 
 p {
   font-family: "lora", monospace;
-  margin-left: 2em;
-  margin-right: 2em;
+  /* margin-left: 2em;
+  margin-right: 2em; */
+  margin: auto;
   font-size: 1.8em;
   background-color: rgb(246, 255, 0);
   width: 80%;
   padding: 0.5em;
   text-align: justify;
   border-radius: 30px;
+  font-size: 2em;
+  margin: auto;
 }
 
 p.my-voice {
-  background-color: #f2f2f2; /* set your desired background color */
+  /*background-color: #f2f2f2; /* set your desired background color */
+  background-color: transparent !important;
   padding: 10px;
   border-radius: 10px;
-  background-image: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.8)); /* set the gradient for the blurred effect */
+  background-image: url("../../content/circle_photos/cloud.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-image: url("./go-theses-23-Einar-Gudmundsson/content/circle_photos/cloud.png"); */
+  /*background-image: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.8)); /* set the gradient for the blurred effect */
   background-clip: padding-box;
-  text-align:center;
+  text-align: center;
   /* font-family: "lora3"; */
   position: center;
   font-family: "dancing";
@@ -409,18 +430,20 @@ p.my-voice {
   /* margin-left: 4em;
   margin-right: 4em; */
   width: 50%;
-  margin-left: 25%;
+  font-size: 2em;
+  margin: auto;
 }
 
 p.conclusion {
   font-family: "lora3";
   color: rgb(255, 255, 255);
   font-size: 1.0em;
-  margin-left: 10em;
-  margin-right: 10em;
-  font-size: clamp( 10px, 6vw, 20px );
+  /* margin-left: 10em;
+  margin-right: 10em; */
+  margin: auto;
+  font-size: clamp(10px, 6vw, 20px);
   display: block;
-  background-color:rgb(0, 0, 255)
+  background-color: rgb(0, 0, 255)
 }
 
 ol,
@@ -429,19 +452,19 @@ ul {
   text-align: center;
   list-style-type: none;
   font-family: 'lora2';
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(0, 2, 113);
-    position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 2, 113);
+  position: fixed;
 }
 
 p.thanks {
   font-family: "pacifico";
   font-size: 2em;
-  background-color:rgb(255, 111, 0);
-  color:rgb(246, 255, 0);
+  background-color: rgb(255, 111, 0);
+  color: rgb(246, 255, 0);
   text-shadow: 0.8px 0.8px rgb(82, 35, 107);
   border-radius: 50%;
   position: center;
@@ -450,39 +473,41 @@ p.thanks {
 
 /* FOOTNOTES!!!! */
 
-footer{
-  
+footer {
+
   font-family: 'lora3';
   position: center;
-  width:80%;
-  margin-top:1rem;
-  margin-bottom:1rem;
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-sup :target, footer :target {
-  border-radius:100%;
+sup :target,
+footer :target {
+  border-radius: 100%;
   background-color: rgba(255, 200, 0, 0.75);
   box-shadow: 0 0 0.5rem 0.5rem rgba(255, 200, 0, 0.75);
-  color:#F00;
+  color: #F00;
 }
-.margin-note{
-  position:absolute;
-  display:inline;
-  width:20%;
-  left:0;
-  padding:1rem;
-  margin-top:-0.625rem;
+
+.margin-note {
+  position: absolute;
+  display: inline;
+  width: 20%;
+  left: 0;
+  padding: 1rem;
+  margin-top: -0.625rem;
   box-sizing: border-box;
   height: 0;
   background-color: #F0F;
 }
 
-@media screen and (max-width: 780px){
-  .margin-note{
-    position:relative;
-    padding:0;
-    border:1px solid #F00;
-    border-radius:100%;
+@media screen and (max-width: 780px) {
+  .margin-note {
+    position: relative;
+    padding: 0;
+    border: 1px solid #F00;
+    border-radius: 100%;
   }
 }
 
@@ -495,7 +520,8 @@ li {
   float: left;
 }
 
-li a, .dropbtn {
+li a,
+.dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -504,7 +530,8 @@ li a, .dropbtn {
 }
 
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover,
+.dropdown:hover .dropbtn {
   background-color: rgb(255, 0, 0);
 }
 
@@ -518,7 +545,7 @@ li.dropdown {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -530,7 +557,9 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -651,7 +680,7 @@ Resources
 @media (min-width: 1201px) and (max-width: 1319px) {
   :root {
     /* --font-size: 24px; */
-  /* }
+/* }
   html,
   body {
     font: var(--font-size) var(--font-family);
@@ -660,7 +689,7 @@ Resources
 /* @media (min-width: 1320px) and (max-width: 1619px) {
   :root {
     /* --font-size: 26px; */
-  /* }
+/* }
   html,
   body {
     font: var(--font-size) var(--font-family);
@@ -688,12 +717,12 @@ Resources
 /* website media queries */
 
 /* @media (max-width: 779px) { */
-  /* styles for screen sizes 779px, should covers 'mobile' and 'tablet' */
-  /* style this one first and then use the two others to 'override' some styles (exceptions/details) */
+/* styles for screen sizes 779px, should covers 'mobile' and 'tablet' */
+/* style this one first and then use the two others to 'override' some styles (exceptions/details) */
 
-  /* utilities */
+/* utilities */
 
-  /* .desktop {
+/* .desktop {
     display: none !important;
   }
   .mobile {
@@ -710,7 +739,7 @@ Resources
 /* } */
 
 /* @media (min-width: 780px) and (max-width: 992px) { */
-  /* use this query to apply style for 'small' desktop screens */
+/* use this query to apply style for 'small' desktop screens */
 /* } */
 
 /* This is a test animation */
@@ -730,15 +759,15 @@ Resources
   to {
     background-position: 500px 19px;
   }
-} */ 
+} */
 /* test animation ends here */
 
 figure {
   text-align: center;
   border-style: dashed;
-   border-width: 10px;
-   color:rgb(255, 111, 0);
-   background-color:rgb(48, 101, 106);
+  border-width: 10px;
+  color: rgb(255, 111, 0);
+  background-color: rgb(48, 101, 106);
 }
 
 .responsive-images {
@@ -768,6 +797,7 @@ figure {
   }
 
   .section figure {
+    height: 100%;
     margin: 1em;
     flex: 1;
   }
@@ -775,9 +805,11 @@ figure {
   .section p {
     flex: 2;
   }
+
   .p {
     width: 100%
   }
+
   /* .main-nav {
     position: fixed;
     bottom: 0;
@@ -807,16 +839,16 @@ figure {
 
   /* p1 {
     /* font-family: "lora3"; */
-    /* position: center;
+  /* position: center;
     font-family: "dancing";
     color: rgb(0, 0, 0);
     font-size: clamp(1em, 50vw, 2em);
     display: block; */
-    /* margin-left: 4em;
+  /* margin-left: 4em;
     margin-right: 4em; */
-    /* text-align: center;
+  /* text-align: center;
     width: 80%; */
-    /* text-shadow: 1px 1px 0px #00203e; */
+  /* text-shadow: 1px 1px 0px #00203e; */
   /* } */
 
   p {
@@ -824,9 +856,7 @@ figure {
     text-align: left;
   }
 
-  p.my-voice {
-    font-size: 2em;
-  }
+
 
   h2 {
     font-size: 2em;
@@ -835,15 +865,15 @@ figure {
   h5 {
     text-align: center;
     font-family: 'pacifico';
-      overflow: hidden;
-      /* background-color: rgb(0, 0, 255); */
-      position: fixed;
-      right:0;
-      top:0;
-      margin:0.5em;
-      padding:0;
-      width:35%;
-      /* background-color:rgb(0, 2, 113);
+    overflow: hidden;
+    /* background-color: rgb(0, 0, 255); */
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 0.5em;
+    padding: 0;
+    width: 35%;
+    /* background-color:rgb(0, 2, 113);
       border-style: solid;
         border-width: 5px;
         border-color:rgb(255, 0, 0) */
@@ -853,20 +883,22 @@ figure {
     font-size: 1.6em;
     text-align: center;
     font-family: 'pacifico';
-      overflow: hidden;
-      position: fixed;
-      left:0;
-      top:0;
-      margin:0.5em;
-      padding:0;
-      width:50%;
-      color:rgb(130, 255, 62);
-      text-shadow: 1px 1px #ff0000;
-  
-      border-color: red;
-      border-style: dashed;
-     border-width: 5px;
-     background-color: rgb(0, 2, 113);
+    overflow: hidden;
+    position: fixed;
+    /* left: 0;
+    top: 0; */
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    color: rgb(130, 255, 62);
+    text-shadow: 1px 1px #ff0000;
+
+    border-color: red;
+    border-style: dashed;
+    border-width: 5px;
+    background-color: rgb(0, 2, 113);
+    width: 100%;
+    box-sizing: border-box;
   }
 
   figure {
@@ -874,10 +906,14 @@ figure {
     /* filter: drop-shadow(0px 0px 2px rgb(255, 0, 0)); */
     /* background-color: rgb(0, 0, 255); */
     border-style: dashed;
-     border-width: 10px;
-     color:rgb(255, 111, 0);
-     background-color:rgb(48, 101, 106)
+    border-width: 10px;
+    color: rgb(255, 111, 0);
+    background-color: rgb(48, 101, 106)
   }
+
+  /* .compass, nav, .button, #fixed-image {
+    display: none;
+  } */
 
 }
 
