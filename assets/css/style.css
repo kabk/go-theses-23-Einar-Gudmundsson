@@ -134,10 +134,10 @@ body {
 
 .compass {
   position: fixed;
-  top: 13%;
-  right: 1%;
-  margin-top: -50px;
-  margin-left: -50px;
+  bottom: 6%;
+  right: 0%;
+  /* margin-top: -50px; */
+  /* margin-left: -50px; */
 
   animation: rotate 1s linear infinite;
   animation-play-state: paused;
@@ -232,10 +232,11 @@ height: 600px;
 
 
 figure.papa {
-  margin-top: 5em;
+  margin-top: 6em;
+  position: center;
   display: absolute;
   border-radius: 30px;
-  width: 90%;
+  width: 80%;
   border: groove 1em rgb(255, 111, 0);
 }
 
@@ -285,7 +286,7 @@ h1 {
 h2 {
   text-align: center;
   /* font-size: 3em; */
-  font-size: clamp( 1.5em, 20vw, 2em );
+  font-size: 2.5em;
   font-family: 'pacifico';
   color:rgb(255, 111, 0);
   margin-left: 20%;
@@ -373,12 +374,18 @@ strong {
   font-family:"lora2";
 }
 
+p.fig {
+  font-family:"lora3";
+  font-size: 1em;
+  color:rgb(255, 0, 0);
+  background-color: none;
+}
+
 p {
   font-family: "lora", monospace;
   margin-left: 2em;
   margin-right: 2em;
-  font-size: 1.2em;
-  font-size: clamp( 10px, 6vw, 20px );
+  font-size: 1.8em;
   background-color: rgb(246, 255, 0);
   width: 80%;
   padding: 0.5em;
@@ -387,21 +394,22 @@ p {
 }
 
 p.my-voice {
+  background-color: #f2f2f2; /* set your desired background color */
+  padding: 10px;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.8)); /* set the gradient for the blurred effect */
+  background-clip: padding-box;
   text-align:center;
   /* font-family: "lora3"; */
   position: center;
   font-family: "dancing";
   color: rgb(0, 0, 0);
-  font-size: clamp(1em, 50vw, 2em);
+  font-size: 2.2em;
   display: block;
   /* margin-left: 4em;
   margin-right: 4em; */
   width: 50%;
   margin-left: 25%;
-  background-image: image("content/circle_photos/cloud.png");
-  border-radius: 50%;
-
-  /* text-shadow: 1px 1px 0px #00203e; */
 }
 
 p.conclusion {
@@ -417,7 +425,7 @@ p.conclusion {
 
 ol,
 ul {
-  font-size: clamp( 1em, 10vw, 2em );
+  font-size: 2em;
   text-align: center;
   list-style-type: none;
   font-family: 'lora2';
@@ -430,12 +438,14 @@ ul {
 }
 
 p.thanks {
-  font-family: "dancing";
+  font-family: "pacifico";
   font-size: 2em;
   background-color:rgb(255, 111, 0);
-  color:rgb(82, 35, 107);
-  text-shadow: 0.5px 0.5px rgb(246, 255, 0);
-  
+  color:rgb(246, 255, 0);
+  text-shadow: 0.8px 0.8px rgb(82, 35, 107);
+  border-radius: 50%;
+  position: center;
+  text-align: center;
 }
 
 /* FOOTNOTES!!!! */
@@ -787,18 +797,39 @@ figure {
     display: unset;
   }
 
-  p1 {
+  a {
+    color: var(--color-text-link);
+    font-family: 'pacifico';
+    font-size: 1em;
+    transform: rotate('90deg');
+  }
+
+
+  /* p1 {
     /* font-family: "lora3"; */
-    position: center;
+    /* position: center;
     font-family: "dancing";
     color: rgb(0, 0, 0);
     font-size: clamp(1em, 50vw, 2em);
-    display: block;
+    display: block; */
     /* margin-left: 4em;
     margin-right: 4em; */
-    text-align: center;
-    width: 80%;
+    /* text-align: center;
+    width: 80%; */
     /* text-shadow: 1px 1px 0px #00203e; */
+  /* } */
+
+  p {
+    font-size: 1.4em;
+    text-align: left;
+  }
+
+  p.my-voice {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 2em;
   }
 
   h5 {

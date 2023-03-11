@@ -41,18 +41,41 @@ body {
     overflow-x: scroll;
     scrollbar-width: none;
   }
+
+
   
   .slides img {
       border-style: solid;
       border-width: 5px;
       color: black;
-    width: 700px;
+    max-height: 450px;
     object-fit: contain;
   }
   
   .slides::-webkit-scrollbar {
     display: none;
   }
+
+
+
+  @media (max-width: 600px) {
+    .slides {
+      flex-direction: column;
+      height: auto;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      position: relative;
+    }
+
+    .slides img {
+      box-sizing: border-box;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+
+
 
 /* .gallery-container {
     position: relative;
