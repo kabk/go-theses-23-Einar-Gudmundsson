@@ -187,7 +187,7 @@ body {
 }
 
 .button-style {
-  background-color: rgb(0, 2, 113);
+  background-color: rgb(255, 0, 0);
   /* border-style: solid; */
   /* border-radius: 30px;
   border-width: 5px; */
@@ -249,6 +249,17 @@ iframe {
 
 /* end of gallery images scroller thingy */
 
+.book {
+  display: none;
+}
+
+.notbook :hover {
+  color: black;
+}
+
+.notbook:hover .book {
+  display: block;
+}
 
 
 
@@ -261,6 +272,10 @@ figure.papa {
   border-radius: 30px;
   width: 80%;
   border: groove 1em rgb(255, 111, 0);
+}
+
+figure.papa-phone {
+  display: none;
 }
 
 figure.end {
@@ -320,10 +335,6 @@ h1 {
   border-style: solid;
   border-width: 5px;
   background-color: rgb(0, 2, 113);
-}
-
-figure.papa-phone {
-  /* display: none; */
 }
 
 h2 {
@@ -399,10 +410,10 @@ strong {
 }
 
 p.fig {
-  font-family: "lora3";
+  font-family: "lora2";
   font-size: 1em;
   color: rgb(255, 0, 0);
-  background-color: none;
+  background-color: transparent;
 }
 
 p {
@@ -412,7 +423,7 @@ p {
   margin: auto;
   font-size: 1.8em;
   background-color: rgb(246, 255, 0);
-  width: 80%;
+  width: 60%;
   padding: 0.5em;
   text-align: justify;
   border-radius: 30px;
@@ -446,15 +457,15 @@ p.my-voice {
 }
 
 p.conclusion {
-  font-family: "lora3";
-  color: rgb(255, 255, 255);
-  font-size: 1.0em;
+  font-family: "lora";
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  width: 60%;
   /* margin-left: 10em;
   margin-right: 10em; */
   margin: auto;
-  font-size: clamp(10px, 6vw, 20px);
   display: block;
-  background-color: rgb(0, 0, 255)
+  background-color:rgb(246, 255, 0);
 }
 
 ol,
@@ -474,7 +485,9 @@ ul {
 p.thanks {
   font-family: "dancing";
   font-size: 2em;
-  color:rgb(0, 0, 0);
+  color:rgb(246, 255, 0);
+  text-shadow: 1px 1px #152b3f;
+  width: 60%;
   position: center;
   text-align: center;
   background-color: transparent !important;
@@ -522,7 +535,7 @@ footer :target {
   margin-top: -0.625rem;
   box-sizing: border-box;
   height: 0;
-  background-color: #F0F;
+  /* background-color: #F0F; */
 }
 
 @media screen and (max-width: 780px) {
@@ -538,10 +551,6 @@ footer :target {
 
 
 /* tryout */
-
-li {
-  float: left;
-}
 
 li a,
 .dropbtn {
@@ -592,6 +601,8 @@ li.dropdown {
 /* end of tryout */
 
 #fixed-image {
+  height: 250px;
+  width: 190px;
   position: fixed;
   bottom: 40px;
   transform: translateX(-50%);
@@ -853,11 +864,15 @@ figure {
     display: unset;
   }
 
+  p.my-voice {
+    font-size: 2em;
+    width: 80%;
+  }
+
   figure.papa-phone {
     margin: auto;
     margin-top: 20%;
-    position: center;
-    display: absolute;
+    display: block;
     border-radius: 30px;
     width: 80%;
     border: groove 1em rgb(255, 111, 0);
@@ -920,10 +935,21 @@ border-radius: none;
   
   }
 
+  h6 {
+    margin-top:15px;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: 'pacifico';
+    color: rgb(130, 255, 62);
+    text-shadow: 1px 1px #152b3f;
+    line-height: 98%;
+  }
+
   p.thanks {
     font-family: "dancing";
-    font-size: 1.6em;
-    color:rgb(0, 0, 0);
+    font-size: 1.7em;
+    color:rgb(246, 255, 0);
+    text-shadow: 1px 1px #152b3f;
     position: center;
     text-align: center;
     background-color: transparent !important;
@@ -960,10 +986,10 @@ border-radius: none;
 }
 
 #fixed-image {
-  height: 181px;
-  width: 130px;
+  height: 133px;
+  width: 112px;
   position: fixed;
-  bottom: 90px;
+  bottom: 60px;
   transform: translateX(-50%);
   left: -100px;
   transition: left 0.5s linear;
@@ -978,13 +1004,21 @@ border-radius: none;
   display: block;
 }
 
+p {
+  font-size: 1.4em;
+  text-align: left;
+  width: 80%;
+}
+
 .main-nav > li {
   display: inline-block;
 }
 
   .compass--small {
-      width: 150px; /* set the desired width and height for the smaller image */
-      height: 150px;
+    right:0;
+    bottom: 10%;
+      width: 100px; /* set the desired width and height for the smaller image */
+      height: 100px;
     }
   
     /* animation: rotate 1s linear infinite;
@@ -1018,11 +1052,6 @@ border-radius: none;
     width: 80%; */
   /* text-shadow: 1px 1px 0px #00203e; */
   /* } */
-
-  p {
-    font-size: 1.4em;
-    text-align: left;
-  }
 
 
 
