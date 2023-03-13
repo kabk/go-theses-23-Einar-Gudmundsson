@@ -1,36 +1,40 @@
-function handleIntersect(entries) {
-  const entry = entries.find(entry => entry.isIntersecting)
+let disabled = false;
 
-  if (!entry) return
+function handleIntersect(entries) {
+  const entry = entries.find(entry => entry.isIntersecting);
+
+  if (!entry || disabled) return;
   
   const image = document.getElementById('fixed-image');
-  const link = document.querySelector(`a[href="#${entry.target.id}"]`)
+  const link = document.querySelector(`a[href="#${entry.target.id}"]`);
 
-  image.setAttribute('style', `left: ${link.getBoundingClientRect().left + 50}px`)
+  link.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 
-  console.log(entry.target, link)
+  image.setAttribute('style', `left: ${link.getBoundingClientRect().x + 50}px`);
 }
 
 const observer = new IntersectionObserver(handleIntersect, {
   root: document.querySelector('.page-wrapper'),
   rootMargin: '500px',
   threshold: 0.0
-})
+});
 
 document.addEventListener('DOMContentLoaded', function() {
   const image = document.getElementById('fixed-image');
   const headings = Array.from(document.querySelectorAll('.main-nav > li > a'))
-    .map(link => link.getAttribute('href'))
+    .map(link => link.getAttribute('href'));
 
   for (const heading of headings) {
-    observer.observe(document.querySelector(heading))
+    observer.observe(document.querySelector(heading));
   }
+
+  console.log(document.querySelector('nav'))
 })
 
 
 window.addEventListener(
   "scroll",
-  () => {
+  event => {
     document.body.style.setProperty(
       "--scroll",
       window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
