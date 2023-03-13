@@ -412,7 +412,7 @@ strong {
 p.fig {
   font-family: "lora2";
   font-size: 1em;
-  color: rgb(255, 0, 0);
+  color:rgb(255, 111, 0);
   background-color: transparent;
 }
 
@@ -436,7 +436,7 @@ p.my-voice {
   background-color: transparent !important;
   padding: 10px;
   border-radius: 10px;
-  background-image: url("../../content/circle_photos/cloud.png");
+  background-image: url("../../content/circle_photos/cloud2.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   /* background-image: url("./go-theses-23-Einar-Gudmundsson/content/circle_photos/cloud.png"); */
@@ -865,7 +865,9 @@ figure {
   }
 
   p.my-voice {
-    font-size: 2em;
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-size: 1.7em;
     width: 80%;
   }
 
@@ -926,13 +928,14 @@ border-radius: none;
   }
 
   h4 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: 'dancing';
     text-align: center;
     /* font-size: clamp(10px, 6vw, 30px); */
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-  
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
   }
 
   h6 {
@@ -964,9 +967,8 @@ border-radius: none;
     overflow: hidden;
     /* background-color: rgb(0, 0, 255); */
     position: fixed;
-    left: 0%;
-    top: 6%;
-    margin: auto;
+    right: 0%;
+    top: 4%;
     padding: 0;
     width: 35%;
     /* border-radius: 30px; */
@@ -983,6 +985,14 @@ border-radius: none;
   color: white;
   text-align: center;
   padding: 14px 16px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: auto;
+  margin-top:20px;
+  margin-bottom:20px;
+  width: 80%;
 }
 
 #fixed-image {
@@ -1014,12 +1024,16 @@ p {
   display: inline-block;
 }
 
-  .compass--small {
+.compass {
+  display: none;
+}
+
+  /* .compass--small {
     right:0;
     bottom: 10%;
       width: 100px; /* set the desired width and height for the smaller image */
-      height: 100px;
-    }
+      /* height: 100px;
+    } */ */
   
     /* animation: rotate 1s linear infinite;
     animation-play-state: paused;
@@ -1027,7 +1041,7 @@ p {
   
     animation-iteration-count: 1;
     animation-fill-mode: both; */
-  }
+  /* } */
 
   a {
     color: var(--color-text-link);
@@ -1053,11 +1067,6 @@ p {
   /* text-shadow: 1px 1px 0px #00203e; */
   /* } */
 
-
-
-  h2 {
-    font-size: 2em;
-  }
 
   h5 {
     text-align: center;
