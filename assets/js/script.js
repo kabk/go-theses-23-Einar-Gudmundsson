@@ -8,7 +8,7 @@ function handleIntersect(entries) {
   const image = document.getElementById('fixed-image');
   const link = document.querySelector(`a[href="#${entry.target.id}"]`);
 
-  link.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  link.scrollIntoView({ behavior: 'auto', block: 'nearest', inline: 'center' });
 
   image.setAttribute('style', `left: ${link.getBoundingClientRect().x + 50}px`);
 }
@@ -27,8 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
   for (const heading of headings) {
     observer.observe(document.querySelector(heading));
   }
-
-  console.log(document.querySelector('nav'))
 })
 
 
