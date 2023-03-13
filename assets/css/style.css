@@ -885,10 +885,10 @@ figure {
 
   figure.papa-phone {
     margin: auto;
-    margin-top: 20%;
+    margin-top: 10%;
     display: block;
     border-radius: 30px;
-    width: 80%;
+    width: auto;
     border: groove 1em rgb(255, 111, 0);
   }
 
