@@ -834,6 +834,7 @@ figure {
   .section {
     display: flex;
     flex-direction: row-reverse;
+    margin: auto;
   }
 
   .section.reverse {
@@ -848,6 +849,7 @@ figure {
 
   .section p {
     flex: 2;
+    margin-left: 19.25%;
   }
 
   .p {
