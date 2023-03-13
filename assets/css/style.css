@@ -177,11 +177,12 @@ body {
   text-align: center;
   font-family: 'pacifico';
   overflow: hidden;
+  border-radius: 30px;
   /* background-color: rgb(0, 0, 255); */
   position: fixed;
-  right: 0;
-  top: 0;
-  margin: 0.5em;
+  right: 3%;
+  top: 3%;
+  /* margin: 0.5em; */
   padding: 0;
   width: 10%;
 }
@@ -271,7 +272,7 @@ figure.papa {
   display: absolute;
   border-radius: 30px;
   width: 80%;
-  border: groove 1em rgb(255, 111, 0);
+  border: groove 30px rgb(255, 111, 0);
 }
 
 figure.papa-phone {
@@ -317,23 +318,26 @@ a:focus-visible {
 }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 2em;
   text-align: center;
   font-family: 'pacifico';
   overflow: hidden;
   position: fixed;
   left: 0;
   top: 0;
-  margin: 0.5em;
+  margin: auto;
   padding: 0;
-  width: 35%;
+  width: 40%;
   color: rgb(130, 255, 62);
   text-shadow: 1px 1px #ff0000;
 
   /* border-radius: 30px; */
-  border-color: red;
+  border: groove rgb(255, 0, 0);
+  border-radius: 30px;
+  border-width: 10px;
+  /* border-color: red;
   border-style: solid;
-  border-width: 5px;
+  /* border-width: 5px;  */
   background-color: rgb(0, 2, 113);
 }
 
@@ -349,7 +353,7 @@ h2 {
   /* -webkit-text-stroke: 0.025px black; */
   border: groove rgb(255, 111, 0);
   border-radius: 30px;
-  border-width: 10px;
+  border-width: 20px;
   /* margin-left: clamp( 0.5em, 6vw, 3em );
    margin-right: clamp( 0.5em, 6vw, 3em ); */
   /* text-decoration: underline; */
@@ -497,25 +501,30 @@ p.thanks {
   background-size: 100% 100%;
 }
 
+#openModal {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
 /* FOOTNOTES!!!! */
 
 footer {
   line-height: 200%;
   position: center;
   width: 60%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 5em;
-  margin-right: 5em;
+  margin: auto;
 }
 
 p.footer {
   position: center;
+  color:rgb(255, 111, 0);
   background-color: transparent;
-  font-family: 'lora3';
-  font-size: 1em;
+  font-family: 'lora2';
+  font-size: 1.2em;
   width:80%;
   background-color: none;
+  text-shadow: 1px 1px rgb(0, 2, 113)
 }
 
 sup :target,
@@ -802,7 +811,7 @@ figure {
   background-color: rgb(48, 101, 106);
   border: groove rgb(255, 111, 0);
   border-radius: 30px;
-  border-width: 10px;
+  border-width: 20px;
 }
 
 .responsive-images {
@@ -885,11 +894,11 @@ figure {
 
   figure.papa-phone {
     margin: auto;
-    margin-top: 10%;
+    margin-top: 15%;
     display: block;
     border-radius: 30px;
     width: auto;
-    border: groove 1em rgb(255, 111, 0);
+    border: groove 20px rgb(255, 111, 0);
   }
 
   figure.papa {
@@ -917,7 +926,7 @@ figure {
   }
 
   h1 {
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
     font-family: 'pacifico';
     overflow: hidden;
@@ -926,11 +935,10 @@ figure {
     top: 0; */
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 95%;
     color: rgb(130, 255, 62);
     text-shadow: 1px 1px #ff0000;
-border: none;
-border-radius: none;
+
     /* border-color: red;
     border-style: dashed;
     border-width: 5px; */
@@ -973,17 +981,19 @@ border-radius: none;
 
   .button {
     
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     font-family: 'pacifico';
     overflow: hidden;
     border-radius: 30px;
     /* background-color: rgb(0, 0, 255); */
     position: fixed;
-    right: 0%;
-    top: 4%;
+    margin: auto;
+    left:0px;
+    right:0px;
+    top: 6%;
     padding: 0;
-    width: 35%;
+    width: 40%;
     /* border-radius: 30px; */
     /* background-color: rgb(0, 2, 113);
     border-style: solid;
@@ -1006,6 +1016,7 @@ h2 {
   margin-top:20px;
   margin-bottom:20px;
   width: 80%;
+  border-width: 15px;
 }
 
 #fixed-image {
