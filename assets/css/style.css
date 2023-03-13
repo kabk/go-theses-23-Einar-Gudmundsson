@@ -864,6 +864,18 @@ figure {
     display: unset;
   }
 
+  .modal-content {
+    background-color: rgb(255, 111, 0);
+    margin:auto;
+    margin-top:15%;
+    /* padding: 10px; */
+    border-radius: 30px;
+    border: 30px groove rgb(0, 229, 255);
+    width: 70%;
+    /* Could be more or less, depending on screen size */
+    box-shadow: 2px 2px 2px 5px black;
+  }
+
   p.my-voice {
     margin-top:10px;
     margin-bottom: 10px;
@@ -1104,12 +1116,9 @@ p {
 
 }
 
-.screen {
-  /* height: 100vh;*/
-}
-
 #openModal {
   background-color: transparent;
   border: none;
   color: white;
+}
 }
