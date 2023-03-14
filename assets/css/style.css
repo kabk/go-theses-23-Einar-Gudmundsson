@@ -1028,14 +1028,14 @@ figure {
 
   .button {
     transform: rotate(-90deg);
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
     font-family: 'pacifico';
     overflow: hidden;
     border-radius: 30px;
     /* background-color: rgb(0, 0, 255); */
     position: fixed;
-    right:-50px;
+    right:-40px;
     top: 20%;
     padding: 0;
     width: 35%;
