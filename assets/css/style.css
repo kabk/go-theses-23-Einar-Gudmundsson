@@ -282,6 +282,8 @@ figure.papa-phone {
 }
 
 figure.end {
+  margin: auto;
+  width:80%;
   background-color: transparent;
   border: none;
   box-shadow: none;
