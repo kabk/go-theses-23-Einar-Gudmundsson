@@ -320,6 +320,7 @@ a:focus-visible {
 }
 
 h1 {
+  z-index:72;
   font-size: 2em;
   text-align: center;
   font-family: 'pacifico';
@@ -636,6 +637,7 @@ li.dropdown {
 /* end of tryout */
 
 #fixed-image {
+  z-index:82;
   height: 250px;
   width: 190px;
   position: fixed;
@@ -883,6 +885,7 @@ figure {
   }
 
   .main-nav {
+    z-index: 80;
     position: fixed;
     bottom: 0;
   
