@@ -15,8 +15,9 @@ function handleIntersect(entries) {
 
 const observer = new IntersectionObserver(handleIntersect, {
   root: document.querySelector('.page-wrapper'),
-  rootMargin: '500px',
-  threshold: 0.0
+  rootMargin: '100px',
+  threshold: 0.1,
+  delay: 500
 });
 
 document.addEventListener('DOMContentLoaded', function() {
