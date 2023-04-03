@@ -554,7 +554,7 @@ p.footer {
   color: rgb(255, 0, 0);
   font-family:'pacifico';
   font-size: 1.5em;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 sup :target,
